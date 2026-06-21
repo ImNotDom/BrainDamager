@@ -2,7 +2,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "joyful kidsground",
+   Name = "whatever this thing is i forgot too",
    Icon = 0, -- Use 0 for no icon
    LoadingTitle = "hi there bitch",
    LoadingSubtitle = "made for niggaring kecil man",
