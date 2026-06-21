@@ -39,3 +39,91 @@ local Window = Rayfield:CreateWindow({
 })
 
 local Tab = Window:CreateTab("idk bro i forgot", 4483362458) -- Title, Image
+
+local Button = Tab:CreateButton({
+   Name = "Swing Duration",
+   Callback = function()
+   local TARGET_NAME = "swingduration"
+local NEW_VALUE = 0.3
+
+print("----- Setting all '" .. TARGET_NAME .. "' values to " .. NEW_VALUE .. " -----")
+
+local changed = 0
+
+for _, obj in ipairs(game:GetDescendants()) do
+    if obj.Name == TARGET_NAME and obj:IsA("NumberValue") then
+        print("Changed:", obj:GetFullName(), " | Old Value:", obj.Value)
+        obj.Value = NEW_VALUE
+        changed += 1
+    end
+end
+
+print("Done. Modified", changed, "NumberValue(s).")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Cooldown",
+   Callback = function()
+   local TARGET_NAME = "cooldown"
+local NEW_VALUE = 0.3
+
+print("----- Setting all '" .. TARGET_NAME .. "' values to " .. NEW_VALUE .. " -----")
+
+local changed = 0
+
+for _, obj in ipairs(game:GetDescendants()) do
+    if obj.Name == TARGET_NAME and obj:IsA("NumberValue") then
+        print("Changed:", obj:GetFullName(), " | Old Value:", obj.Value)
+        obj.Value = NEW_VALUE
+        changed += 1
+    end
+end
+
+print("Done. Modified", changed, "NumberValue(s).")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Charge Cooldown",
+   Callback = function()
+   local TARGET_NAME = "chargetime"
+local NEW_VALUE = 0.1
+
+print("----- Setting all '" .. TARGET_NAME .. "' values to " .. NEW_VALUE .. " -----")
+
+local changed = 0
+
+for _, obj in ipairs(game:GetDescendants()) do
+    if obj.Name == TARGET_NAME and obj:IsA("NumberValue") then
+        print("Changed:", obj:GetFullName(), " | Old Value:", obj.Value)
+        obj.Value = NEW_VALUE
+        changed += 1
+    end
+end
+
+print("Done. Modified", changed, "NumberValue(s).")
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "Weight",
+   Callback = function()
+   local TARGET_NAME = "weight"
+local NEW_VALUE = 0.1
+
+print("----- Setting all '" .. TARGET_NAME .. "' values to " .. NEW_VALUE .. " -----")
+
+local changed = 0
+
+for _, obj in ipairs(game:GetDescendants()) do
+    if obj.Name == TARGET_NAME and obj:IsA("NumberValue") then
+        print("Changed:", obj:GetFullName(), " | Old Value:", obj.Value)
+        obj.Value = NEW_VALUE
+        changed += 1
+    end
+end
+
+print("Done. Modified", changed, "NumberValue(s).")
+   end,
+})
