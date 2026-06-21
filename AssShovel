@@ -1,0 +1,41 @@
+--https://docs.sirius.menu/rayfield
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "joyful kidsground",
+   Icon = 0, -- Use 0 for no icon
+   LoadingTitle = "hi there bitch",
+   LoadingSubtitle = "made for niggaring kecil man",
+   ShowText = "hi there nig", -- for mobile users to unhide rayfield, change if you'd like
+   Theme = "Amber",
+
+   ToggleUIKeybind = "L",
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false,
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil,
+      FileName = "Big Hub"
+   },
+
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink",
+      RememberJoins = true
+   },
+
+   KeySystem = true,
+   KeySettings = {
+      Title = "if you read this abi likes you",
+      Subtitle = "if you read this abi likes you",
+      Note = "haha nigger i put key so you must open the raw link",
+      FileName = "Idk",
+      SaveKey = true,
+      GrabKeyFromSite = false,
+      Key = {"battleunderabrokensky-----67"}
+   }
+})
+
+local Tab = Window:CreateTab("idk bro i forgot", 4483362458) -- Title, Image
